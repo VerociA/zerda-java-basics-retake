@@ -1,3 +1,5 @@
+package com.greenfox.exams.java.retake;
+
 /**
  * Created by Verőci Ádám on 2016.12.12..
  */
@@ -11,7 +13,7 @@ public class Main {
 
         Carrier carrier = new Carrier();
         carrier.add("F16");
-        
+
 
 
     }

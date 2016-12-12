@@ -1,3 +1,5 @@
+package com.greenfox.exams.java.retake;
+
 /**
  * Created by Verőci Ádám on 2016.12.12..
  */
@@ -8,13 +10,14 @@ public class Aircraft {
     int allDamage;
     int maxAmmo;
 
+    public int getAmmo() {
+        return ammo;
+    }
 
     public Aircraft(String type) {
         this.type = type;
-        this.baseDamage = baseDamage;
         this.allDamage = ammo * baseDamage;
         this.ammo= 0;
-        this.maxAmmo = maxAmmo;
     }
 
     @Override
