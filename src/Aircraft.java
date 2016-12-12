@@ -11,11 +11,18 @@ public class Aircraft {
         this.type = type;
         this.baseDamage = baseDamage;
         this.allDamage = allDamage;
-        this.ammo= 0;
+        this.ammo= 40;
     }
 
     @Override
     public String toString(){
         return("Type: " + type + ",  Ammo: " + ammo + ", Base Damage: " + baseDamage + ", All Damage: " + allDamage);
+    }
+
+    int hurt;
+    public int fight(){
+        hurt = ammo * baseDamage;
+        ammo = 0;
+        return hurt;
     }
 }

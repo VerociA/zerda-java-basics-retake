@@ -6,5 +6,6 @@ public class Main {
         Aircraft plane = new Aircraft("F16", 30, 500);
 
         System.out.println(plane.toString());
+        System.out.println(plane.fight());
     }
 }
