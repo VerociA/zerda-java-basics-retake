@@ -20,6 +20,14 @@ public class Aircraft {
         this.ammo= 0;
     }
 
+    public Aircraft(String type, int baseDamage, int maxAmmo) {
+        this.type = type;
+        this.baseDamage = baseDamage;
+        this.maxAmmo = maxAmmo;
+        this.ammo = 0;
+        this.allDamage = ammo * baseDamage;
+    }
+
     @Override
     public String toString(){
         return("Type: " + type + ",  Ammo: " + ammo + ", Base Damage: " + baseDamage + ", All Damage: " + allDamage);

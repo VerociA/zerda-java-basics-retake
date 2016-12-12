@@ -13,11 +13,11 @@ public class Carrier extends ArrayList{
     }
 
     public void addAircraft(String type) {
-        if (type == "com.greenfox.exams.java.retake.F16") {
-            this.add(new F16("com.greenfox.exams.java.retake.F16"));
+        if (type == "F16") {
+            this.add(new F16("F16"));
         }
-        else if(type == "com.greenfox.exams.java.retake.F35") {
-            this.add(new F35("com.greenfox.exams.java.retake.F35"));
+        else if(type == "F35") {
+            this.add(new F35("F35"));
         }else System.out.println("No such plane in the AirForce.");
     }
 
@@ -31,11 +31,19 @@ public class Carrier extends ArrayList{
 //    int ammos;
 //    public int sumOfAmmos(){
 //        for (int i = 0; i<this.size(); i++){
-//            ammos = this.get(i).getAmmo();
+//            this.get(i).getAmmo();
 //        }return count;
 //    }
-    @Override
-    public String toString(){
-        return ("Aircraft count: " + this.countOfPlanes() +", Ammo Storage: " + ammos, Total damage: 2280, Health Remaining: hp")
-    }
+//
+//    int tdamage
+//    public int totalDamage(){
+//        for (int i = 0; i<this.size(); i++){
+//            tdamage = ammos * this.get(i).baseDamage;
+//        }return count;
+//    }
+//
+//    @Override
+//    public String toString(){
+//        return ("Aircraft count: " + this.countOfPlanes() +", Ammo Storage: " + ammos + ",Total damage: " + tdamage +  ",Health Remaining: " + hp);
+//    }
 }

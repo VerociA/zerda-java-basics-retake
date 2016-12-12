@@ -10,4 +10,6 @@ public class F35 extends Aircraft{
         baseDamage = 50;
         maxAmmo = 12;
     }
+
+
 }
