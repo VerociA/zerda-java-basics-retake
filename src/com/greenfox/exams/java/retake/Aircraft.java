@@ -7,30 +7,22 @@ public class Aircraft {
     String type;
     int ammo;
     int baseDamage;
-    int allDamage;
     int maxAmmo;
-
-    public int getAmmo() {
-        return ammo;
-    }
-
-    public Aircraft(String type) {
-        this.type = type;
-        this.allDamage = ammo * baseDamage;
-        this.ammo= 0;
-    }
 
     public Aircraft(String type, int baseDamage, int maxAmmo) {
         this.type = type;
         this.baseDamage = baseDamage;
         this.maxAmmo = maxAmmo;
         this.ammo = 0;
-        this.allDamage = ammo * baseDamage;
+    }
+
+    public int allDamage(){
+        return this.ammo*this.baseDamage;
     }
 
     @Override
     public String toString(){
-        return("Type: " + type + ",  Ammo: " + ammo + ", Base Damage: " + baseDamage + ", All Damage: " + allDamage);
+        return("Type: " + type + ",  Ammo: " + ammo + ", Base Damage: " + baseDamage + ", All Damage: " + this.allDamage());
     }
 
     int hurt;
@@ -50,4 +42,9 @@ public class Aircraft {
             ammo = maxAmmo;
         } return remainder;
     }
+
+    public int getAmmo() {
+        return ammo;
+    }
+
 }

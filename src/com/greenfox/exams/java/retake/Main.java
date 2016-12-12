@@ -6,15 +6,26 @@ package com.greenfox.exams.java.retake;
 public class Main {
     public static void main(String[] args) {
         Aircraft plane = new Aircraft("F16", 30, 8);
-
         System.out.println(plane.toString());
-        System.out.println(plane.fight());
         plane.refill(2);
-        System.out.println(plane.fight());
+        System.out.println("Aircraft's alldamage value: " + plane.fight());
 
         Carrier carrier = new Carrier();
-        carrier.add("F16");
+        carrier.addAircrafts();
+        carrier.addAircrafts();
+        carrier.fill();
+        System.out.println("Leftover ammos on carrier: " + carrier.ammos);
 
-
+        Carrier enemy = new Carrier();
+        enemy.addAircrafts();
+        enemy.fill();
+        carrier.attack(enemy);
+        System.out.println(enemy.toString());
+        carrier.defend(enemy);
+        System.out.println(carrier.toString());
+        carrier.attack(enemy);
+        carrier.attack(enemy);
+        carrier.attack(enemy);
+        System.out.println(enemy.toString());
     }
 }
