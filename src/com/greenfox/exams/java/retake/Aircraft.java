@@ -47,6 +47,7 @@ public class Aircraft {
             remainder=0;
         }else {
             remainder=ammo + rounds - maxAmmo;
+            ammo = maxAmmo;
         } return remainder;
     }
 }

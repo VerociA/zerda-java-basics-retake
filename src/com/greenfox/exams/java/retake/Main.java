@@ -5,15 +5,15 @@ package com.greenfox.exams.java.retake;
  */
 public class Main {
     public static void main(String[] args) {
-        Aircraft plane = new F16("F16");
+        Aircraft plane = new Aircraft("F16", 30, 8);
 
         System.out.println(plane.toString());
         System.out.println(plane.fight());
-        plane.refill(20);
+        plane.refill(2);
+        System.out.println(plane.fight());
 
         Carrier carrier = new Carrier();
         carrier.add("F16");
-
 
 
     }

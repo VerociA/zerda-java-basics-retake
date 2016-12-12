@@ -21,29 +21,33 @@ public class Carrier extends ArrayList{
         }else System.out.println("No such plane in the AirForce.");
     }
 
-    int count;
-    public int countOfPlanes(){
-        for (int i = 0; i<this.size(); i++){
-            count++;
-        }return count;
-    }
 
+
+//    int count;
+//    public int countOfPlanes(){
+//        for (int i = 0; i<this.size(); i++){
+//            count++;
+//        }return count;
+//    }
+//
 //    int ammos;
 //    public int sumOfAmmos(){
 //        for (int i = 0; i<this.size(); i++){
 //            this.get(i).getAmmo();
-//        }return count;
+//        }return ammos;
 //    }
 //
 //    int tdamage
 //    public int totalDamage(){
 //        for (int i = 0; i<this.size(); i++){
 //            tdamage = ammos * this.get(i).baseDamage;
-//        }return count;
+//        }return tdamage;
 //    }
 //
 //    @Override
 //    public String toString(){
-//        return ("Aircraft count: " + this.countOfPlanes() +", Ammo Storage: " + ammos + ",Total damage: " + tdamage +  ",Health Remaining: " + hp);
+//      if(hp>0) { return ("Aircraft count: " + this.countOfPlanes() +", Ammo Storage: " + ammos + ",Total damage: " + tdamage +  ",Health Remaining: " + hp);}
+//            else{
+//        return "It's dead Jim :("}
 //    }
 }

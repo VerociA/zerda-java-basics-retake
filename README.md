@@ -62,13 +62,13 @@ For an aircraft carrier, the `toString()` reports as follows:-
 ```
 com.greenfox.exams.java.retake.Aircraft count: 5, Ammo Storage: 2300, Total damage: 2280, Health Remaining: 720
 Aircrafts:
-Type com.greenfox.exams.java.retake.F35, Ammo: 12, Base Damage: 50, All Damage: 600
+Type F35, Ammo: 12, Base Damage: 50, All Damage: 600
 Type com.greenfox.exams.java.retake.F35, Ammo: 12, Base Damage: 50, All Damage: 600
 Type com.greenfox.exams.java.retake.F35, Ammo: 12, Base Damage: 50, All Damage: 600
 Type com.greenfox.exams.java.retake.F16, Ammo: 8, Base Damage: 30, All Damage: 240
 Type com.greenfox.exams.java.retake.F16, Ammo: 8, Base Damage: 30, All Damage: 240
 ```
-If the com.greenfox.exams.java.retake.Carrier's health points fall to 0 (or less) then the `toString()` instead returns `It's dead Jim :(`.
+If the Carrier's health points fall to 0 (or less) then the `toString()` instead returns `It's dead Jim :(`.
 
 ### Methods
 
