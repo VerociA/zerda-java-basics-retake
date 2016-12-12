@@ -110,7 +110,12 @@ public class com.greenfox.exams.java.retake.Main {
 }
 ```
 What's get printed out? [2p] What is wrong with the code currently and why? [2p]
-
+The code doesn't compile. The problem is that we try to reach a variable in a static method which is defined outside of the method. Remove static from the method definiton. Then the printout will be:
+alma
+almakorte
+almakortekorte
+almakortekortekorte
+korte
 #### Your answer:
 
 
