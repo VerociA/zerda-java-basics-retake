@@ -3,9 +3,11 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Aircraft plane = new Aircraft("F16", 30, 500);
+        Aircraft plane = new Aircraft("F16", 30,8);
 
         System.out.println(plane.toString());
         System.out.println(plane.fight());
+        plane.refill(20);
+        
     }
 }

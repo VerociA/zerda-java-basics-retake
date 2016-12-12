@@ -6,12 +6,14 @@ public class Aircraft {
     int ammo;
     int baseDamage;
     int allDamage;
+    int maxAmmo;
 
-    public Aircraft(String type, int baseDamage, int allDamage) {
+    public Aircraft(String type, int baseDamage, int maxAmmo) {
         this.type = type;
         this.baseDamage = baseDamage;
-        this.allDamage = allDamage;
-        this.ammo= 40;
+        this.allDamage = ammo * baseDamage;
+        this.ammo= 0;
+        this.maxAmmo = maxAmmo;
     }
 
     @Override
@@ -24,5 +26,15 @@ public class Aircraft {
         hurt = ammo * baseDamage;
         ammo = 0;
         return hurt;
+    }
+
+    int remainder;
+    public int refill(int rounds){
+        if(maxAmmo >= ammo + rounds){
+            ammo+=rounds;
+            remainder=0;
+        }else {
+            remainder=ammo + rounds - maxAmmo;
+        } return remainder;
     }
 }
