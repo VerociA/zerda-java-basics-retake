@@ -8,7 +8,8 @@ public class Aircraft {
     int allDamage;
     int maxAmmo;
 
-    public Aircraft(String type, int baseDamage, int maxAmmo) {
+
+    public Aircraft(String type) {
         this.type = type;
         this.baseDamage = baseDamage;
         this.allDamage = ammo * baseDamage;
